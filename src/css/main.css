@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(180, 216, 95, 90%);
+}
+
+header {
+    width: 95%;
+    height: 5vh;
+    margin: 0 auto;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: min(36px, 1.8em);
+}
+
+.navbar {
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8em;
+    font-weight: bolder;
+    letter-spacing: 0.5em;
+}
+
+.lobster {
+    color: rgb(0, 0, 0, 80%);
+    font-family: 'Lobster', cursive;
+}
+
+.quicksand {
+    color: rgb(0, 0, 0, 80%);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+#content {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgb(180, 216, 95, 90%);
+}
+
+#hero-section {
+    position: relative;
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headline {
+    position: relative;
+    left: -100%;
+    transition: all 500ms ease;
+}
+
+.headline-title {
+    font-size: 64px;
+    line-height: 95.4%;
+    text-align: left;
+}
+
+.headline-desc {
+    font-size: 24px;
+    text-align: left;
+}
+
+#head-image {
+    position: relative;
+    right: -100%;
+    width: 550px;
+    height: 430px;
+    transition: all 500ms ease;
+}
+
+#head-image img {
+    width: 100%;
+    height: 100%;
+}
+
+#book-now {
+    width: 10em;
+    padding: 0.5em;
+    text-align: center;
+    background: rgb(0, 0, 0, 60%);
+    color: white;
+    font-weight: bolder;
+}
