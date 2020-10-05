@@ -14,21 +14,25 @@ body {
 }
 
 header {
-    width: 95%;
+    position: relative;
+    top: -50%;
+    width: 90%;
     height: 5vh;
     margin: 0 auto;
     padding: 0.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: top 500ms ease-in-out;
 }
 
 .logo {
+    width: 20%;
     font-size: min(36px, 1.8em);
 }
 
 .navbar {
-    width: 22%;
+    width: 20%;
     display: flex;
     justify-content: space-between;
 }
@@ -36,7 +40,18 @@ header {
 .nav-item {
     font-family: 'Quicksand', sans-serif;
     font-size: 0.8em;
-    font-weight: bolder;
+    font-weight: normal;
+    letter-spacing: 0.5em;
+    transition: all 250ms ease;
+}
+
+.nav-item a {
+    color: rgb(0, 0, 0, 80%);
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    font-weight: bold;
     letter-spacing: 0.5em;
 }
 
@@ -54,63 +69,9 @@ header {
 #content {
     width: 100%;
     height: 90%;
-    overflow: hidden;
-}
-
-.overlay {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: rgb(180, 216, 95, 90%);
-}
-
-#hero-section {
-    position: relative;
-    width: 95%;
-    height: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-
-#headline {
-    position: relative;
-    left: -100%;
-    transition: all 500ms ease;
-}
-
-.headline-title {
-    font-size: 64px;
-    line-height: 95.4%;
-    text-align: left;
-}
-
-.headline-desc {
-    font-size: 24px;
-    text-align: left;
-}
-
-#head-image {
-    position: relative;
-    right: -100%;
-    width: 550px;
-    height: 430px;
-    transition: all 500ms ease;
-}
-
-#head-image img {
-    width: 100%;
-    height: 100%;
-}
-
-#book-now {
-    width: 10em;
-    padding: 0.5em;
-    text-align: center;
-    background: rgb(0, 0, 0, 60%);
-    color: white;
-    font-weight: bolder;
+    overflow: hidden;   
 }

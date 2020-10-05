@@ -1,0 +1,59 @@
+#homepage {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+}
+
+#hero-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headline {
+    position: relative;
+    left: -50%;
+    opacity: 0.2;
+    transition: all 500ms ease-in-out;
+                /* opacity 500ms ease; */
+}
+
+.headline-title {
+    font-size: 64px;
+    line-height: 95.4%;
+    text-align: left;
+}
+
+.headline-desc {
+    font-size: 24px;
+    text-align: left;
+}
+
+#head-image {
+    position: relative;
+    right: -50%;
+    width: 550px;
+    height: 430px;
+    opacity: 0.2;
+    transition: all 500ms ease-in-out;
+                /* opacity 500ms ease; */
+}
+
+#head-image img {
+    width: 100%;
+    height: 100%;
+}
+
+#book-now {
+    width: 10em;
+    padding: 0.5em;
+    text-align: center;
+    background: rgb(0, 0, 0, 60%);
+    color: white;
+    font-weight: bolder;
+}
+
