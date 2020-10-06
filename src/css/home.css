@@ -2,7 +2,7 @@
     position: relative;
     width: 90%;
     height: 100%;
-    transition: all 500ms ease-in-out;
+    transition: all 250ms ease;
 }
 
 #hero-section {
@@ -18,7 +18,7 @@
     position: relative;
     left: -50%;
     opacity: 0.2;
-    transition: all 500ms ease-in-out;
+    transition: all 250ms ease-in-out;
                 /* opacity 500ms ease; */
 }
 

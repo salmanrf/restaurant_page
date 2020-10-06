@@ -42,6 +42,4 @@ function getContent() {
     return homePage;
 }
 
-homePage.getNumber = () => parseInt(homePage.getAttribute("page-number"));
-
 export default {render, getContent};

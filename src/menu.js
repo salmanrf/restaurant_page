@@ -48,6 +48,7 @@ menuPage.appendChild(filter);
 menuPage.appendChild(menuContainer);
 
 function getContent() {
+    renderMenu();
     return menuPage;
 }
 
@@ -75,7 +76,5 @@ function renderMenu() {
         card.style.opacity = 1;
     }
 }
-
-menuPage.getNumber = () => parseInt(menuPage.getAttribute("page-number"));
 
 export default {getContent, renderMenu};
