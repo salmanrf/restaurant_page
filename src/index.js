@@ -49,7 +49,6 @@ function slideTab(event) {
 
         // if the slidingIn content happens immediately, the width will be ignored
         // thus shrinking the element according to flex box
-        // so it needs to be delayed
         setTimeout(() => { 
             content.appendChild(slidingIn);
             slidingIn.style.right = (slidingIn.offsetWidth * 0) + "px";

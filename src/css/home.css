@@ -18,7 +18,7 @@
     position: relative;
     left: -50%;
     opacity: 0.2;
-    transition: all 250ms ease-in-out;
+    transition: all 500ms ease-in-out;
                 /* opacity 500ms ease; */
 }
 

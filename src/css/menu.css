@@ -7,7 +7,7 @@
     grid-template-columns: repeat(12, 8.3333%);
     grid-template-rows: repeat(12, 8.3333%);
     background: white;
-    transition: all 500ms ease;
+    transition: all 250ms ease;
 }
 
 #sidebar {
