@@ -1,5 +1,6 @@
 import home from "./home";
 import menu from "./menu";
+import about from "./about";
 import "./css/main.css";
 
 // Animate sliding header on page load
@@ -10,7 +11,7 @@ header.style.top = (header.offsetHeight * 0) + "px";
 let content = document.querySelector("#content");
 
 // Get reference to contents to append to the container
-let contentIndex = [home.getContent(), menu.getContent()];
+let contentIndex = [home.getContent(), menu.getContent(), about.getContent()];
 
 // Give contents a constant width size
 for(let item of contentIndex) {
@@ -20,7 +21,7 @@ for(let item of contentIndex) {
 // Start with homepage
 home.render(content); 
 
-// Keeps track of the tab content
+// Keeps track of the tab content, starts with first page
 let currentPage = 1;
 
 // Add event listeners to navbar items
@@ -47,7 +48,7 @@ function slideTab(event) {
         slidingOut.style.left = "-100%";
         slidingIn.style.right = "-100%";
 
-        // if the slidingIn content happens immediately, the width will be ignored
+        // if the slidingIn slide happens immediately, the width will be ignored
         // thus shrinking the element according to flex box
         setTimeout(() => { 
             content.appendChild(slidingIn);
@@ -60,7 +61,7 @@ function slideTab(event) {
         slidingOut.style.right = "-100%";
         slidingIn.style.left = "-100%";
 
-        // if the slidingIn content happens immediately, the width will be ignored
+        // if the slidingIn slide happens immediately, the width will be ignored
         // thus shrinking the element according to flex box
         // so it needs to be delayed
         setTimeout(() => {

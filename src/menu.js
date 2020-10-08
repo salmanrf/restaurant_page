@@ -18,7 +18,6 @@ const MENU = [
 
 let menuPage = document.createElement("div");
 menuPage.setAttribute("id", "menupage");
-menuPage.setAttribute("page-number", "2");
 
 let sidebar = document.createElement("div");
 sidebar.setAttribute("id", "sidebar");

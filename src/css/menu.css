@@ -1,4 +1,5 @@
 #menupage {
+    margin-top: 2em;
     position: relative;
     width: 90%;
     height: 100%;
@@ -7,7 +8,7 @@
     grid-template-columns: repeat(12, 8.3333%);
     grid-template-rows: repeat(12, 8.3333%);
     background: white;
-    transition: all 250ms ease;
+    transition: all 250ms ease-in-out;
 }
 
 #sidebar {
@@ -31,15 +32,8 @@
     list-style: none;
 }
 
-#filter {
-    grid-area: 1/3/2/13;
-    width: 100%;
-    height: 50%;
-    background: rgb(218, 236, 177, 90%);
-}
-
 #menu-container {
-    grid-area: 2/3/13/13;
+    grid-area: 2/3/12/13;
     width: 100%;
     height: 100%;
     display: grid;
